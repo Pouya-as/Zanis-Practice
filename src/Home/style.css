@@ -1,0 +1,123 @@
+@font-face {
+    font-family: vazir;
+    src: url(../../font/Vazir.woff);
+}
+
+@font-face {
+    font-family: vazir-bold;
+    src: url(../../font/Vazir-Bold.woff);
+}
+
+body {
+    font-family: vazir;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* Header button rotating */
+.button #nav-toggle-btn {
+    transform: rotate(180deg);
+}
+
+/* Navbar */
+
+#menu ul {
+    width: 240px;
+}
+
+.dashboard {
+    background-image: url(../../files/icon/dashboard.svg);
+    width: 20px;
+    height: 20px;
+    
+}
+
+.users {
+    background-image: url(../../files/icon/users.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.list {
+    background-image: url(../../files/icon/list.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.gears {
+    background-image: url(../../files/icon/gears.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+#menu li a{
+    display: flex;
+    gap: 0.5rem;
+    padding: 11px 14px;
+
+}
+
+.nav-hidden span {
+    display: inline-block;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar-closed .nav-hidden span {
+    opacity: 0; /* Hide span elements */
+    transition: opacity 0.3s ease; /* Smooth hiding */
+}
+
+/* dropdown menu */
+
+.dropdown {
+    display: none;
+}
+
+/* Animation for dropdown */
+
+.show {
+    display: block;
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Navbar Button */
+.add {
+    background-image: url(../../files/icon/add-menu-button.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+} 
+
+/* hide the button in menu when click the header button */
+.add-nav .remove-nav {
+    display: none;
+}
+
+/* sidebar closing */
+.sidebar-closed #menu {
+    width: 56px;
+}
+
+/* Banner */
+
+/* banner section */
+.banner #banner {
+    margin-right: 56px;
+}
