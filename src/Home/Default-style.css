@@ -22,7 +22,6 @@ body {
 }
 
 /* Navbar */
-
 #menu ul {
     width: 240px;
 }
@@ -72,14 +71,17 @@ body {
     transition: opacity 0.3s ease; /* Smooth hiding */
 }
 
-/* dropdown menu */
+/* sidebar closing */
+.sidebar-closed #menu {
+    width: 56px;
+}
 
+/* dropdown menu */
 .dropdown {
     display: none;
 }
 
 /* Animation for dropdown */
-
 .show {
     display: block;
     animation: slideDown 0.5s ease;
@@ -98,7 +100,9 @@ body {
 
 
 /* Hoevr Dropdown menu */
-
+/* .dropdown-menu {
+    display: none;
+} */
 
 
 /* Navbar Button */
@@ -112,11 +116,6 @@ body {
 /* hide the button in menu when click the header button */
 .add-nav .remove-nav {
     display: none;
-}
-
-/* sidebar closing */
-.sidebar-closed #menu {
-    width: 56px;
 }
 
 /* Banner */
