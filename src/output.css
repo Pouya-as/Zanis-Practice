@@ -802,3 +802,7 @@ video {
 .duration-300 {
   transition-duration: 300ms;
 }
+
+.group:hover .group-hover\:block {
+  display: block;
+}

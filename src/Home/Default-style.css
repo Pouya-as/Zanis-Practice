@@ -104,6 +104,9 @@ body {
     display: none;
 } */
 
+/* .sidebar-closed .menu-container:hover .dropdown-menu {
+    display: block;
+} */
 
 /* Navbar Button */
 .add {
